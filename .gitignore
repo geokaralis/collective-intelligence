@@ -1,0 +1,16 @@
+# artifacts
+__pycache__/
+*.py[oc]
+.coverage
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv
+
+# outputs
+reports/
