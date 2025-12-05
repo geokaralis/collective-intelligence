@@ -6,7 +6,7 @@ Minimal swarm intelligence library for LLM orchestration. Agents communicate thr
 
 ```python
 import asyncio
-from collectiveintelligence import Collective, agent
+from collective import Collective, agent
 
 @agent("analyzer", consumes=["goal"], produces="analysis")
 async def analyze(ctx):
