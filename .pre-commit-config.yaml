@@ -19,5 +19,5 @@ repos:
           - --output-format=concise
         language: python
         additional_dependencies:
-          - ty==0.0.0.0.1a31
+          - ty==0.0.1a31
         types_or: [python, pyi]
