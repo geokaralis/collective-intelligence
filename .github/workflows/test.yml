@@ -38,4 +38,4 @@ jobs:
 
       - name: Run tests
         run: |
-          uv run pytest tests/ -v --cov=collectiveintelligence --cov-report=xml --cov-report=term
+          uv run pytest tests/ -v --cov=collective --cov-report=xml --cov-report=term

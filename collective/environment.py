@@ -9,7 +9,6 @@ from .trace import Trace
 class Environment:
     """
     Shared memory where agents communicate via traces (stigmergy).
-    Each task has isolated traces. Thread-safe for concurrent task execution.
     """
 
     def __init__(self):

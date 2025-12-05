@@ -1,5 +1,5 @@
 import pytest
-from collectiveintelligence import Collective, agent, Environment
+from collective import Collective, agent, Environment
 
 
 class TestBasicPipeline:

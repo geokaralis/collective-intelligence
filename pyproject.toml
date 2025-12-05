@@ -1,13 +1,15 @@
 [project]
-name = "collectiveintelligence"
+name = "collective-intelligence"
 version = "0.1.0"
-description = "Minimal Swarm Intelligence"
+description = "Collective intelligence for LLM orchestration using stigmergy"
+license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
 
 [dependency-groups]
 dev = [
+    "pre-commit>=4.5.0",
     "pytest>=9.0.1",
     "pytest-asyncio>=1.3.0",
     "pytest-cov>=7.0.0",
@@ -21,12 +23,12 @@ build-backend = "hatchling.build"
 
 # hatchling configuration
 [tool.hatch.version]
-path = "collectiveintelligence/__init__.py"
+path = "collective/__init__.py"
 
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/collectiveintelligence",
+    "/collective",
     "/README.md",
 ]
 exclude = [
@@ -34,7 +36,7 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["collectiveintelligence"]
+packages = ["collective"]
 
 [tool.ty.rules]
 unresolved-import = "warn"
@@ -58,7 +60,7 @@ asyncio_mode = "auto"
 norecursedirs = [".git", ".tox", "dist", "build", "*.egg", "__pycache__"]
 
 [tool.coverage.run]
-source = ["collectiveintelligence"]
+source = ["collective"]
 omit = [
     "*/tests/*",
     "*/__pycache__/*",

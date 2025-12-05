@@ -7,7 +7,6 @@ from datetime import datetime
 class Trace:
     """
     A pheromone trail left by an agent.
-    Type is just a string - you define your own types.
     """
 
     agent: str

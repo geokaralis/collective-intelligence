@@ -1,6 +1,6 @@
 import asyncio
 
-from collectiveintelligence import Collective, agent
+from collective import Collective, agent
 
 
 async def example_basic():
